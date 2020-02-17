@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.idea/deployment.xml
+.idea/feg_translated.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+composer.lock
+composer.phar

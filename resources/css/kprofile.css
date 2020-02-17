@@ -1,0 +1,24 @@
+.kprofileBox {margin-bottom:20px}
+.kprofileTitle {background-color:#277098;color:white;font-size:1.4em;text-align:center;padding:5px}
+.kprofileSubTitle { font-size:larger;font-weight:bold;margin:10px 0}
+.kprofileLabel {display:inline-block;font-weight:bold}
+.kprofileValue {display:inline-block;}
+.kprofileChangeThis {color:blue;cursor:pointer;text-decoration:underline;font-size:smaller;}
+
+.kprofileShipmentDetails {display:none};
+
+#kprofileFormHiddenAddress { display:none}
+
+
+
+.kprofilePaySourceTile {border:1px solid #CCC;padding:10px;background-color:#efefef;margin:10px 0}
+.kprofilePaySourceTile span{display:inline-block;line-height:1;margin-left:20px;vertical-align:middle}
+.kprofilePaySourceTile input{vertical-align:middle}
+
+.kprofilePrimaryPaySource { border: 1px solid black !important}
+
+
+
+table.kprofileTable {width:100%; border-spacing:0;padding-top:5px;font-size:16px; border-radius:.5em;word-wrap:break-word}
+.kprofileTable td {text-align:left;padding:.8em .5em;border-bottom:thin dotted #CCC;}
+.kprofileTable tr.titleRow td{padding:.8em .5em !important;white-space:nowrap;border-top:1px solid #CCC;border-bottom:1px solid #CCC;font-style:italic;font-size:18px}

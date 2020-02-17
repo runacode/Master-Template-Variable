@@ -1,0 +1,39 @@
+ **Create a New MID** on the PayPal gateway:
+
+**_Note: Stand Alone Transaction can not be used with this feature. Make sure Stand Alone Transaction is unchecked inside of the campaign product._** 
+
+[image:68]
+
+Select a **Lander Campaign**, Open the **Lander Editor**, choose the **Paypal MID** under the _Paypal Account dropdown_, and then click the **Blue** **Update Page** Button:
+[image:69]
+
+**Download the Lander package** and redeploy the lander as described in [this article](/landing_page_setup/form-code-integration/)
+
+
+**Now edit your checkout page and insert this code anywhere on the page:**
+
+    <?php $ksdk->echoPaypalSigninButton(); ?>
+
+Insert this code inside of the form element:
+
+    <?php $ksdk->echoPaypalCheckoutButton(); ?>
+
+#### **To enable upsells with PayPal:** 
+
+** Notice: First contact Paypal and have the Reference Transaction Enabled on their end.**
+
+Then go to the **Paypal Mid** inside of Konnektive and check the **referenceTransactionsEnabled** box on MID setup.
+
+[image:921]
+
+**Then add this code inside the form element on the upsell page:**
+
+    <?php $ksdk->echoUpsaleCheckoutButton(); ?>
+
+
+
+
+
+
+
+For a non KForm integration please reference this article coming directly from Paypal: https://developer.paypal.com/docs/classic/express-checkout/ec-integration/

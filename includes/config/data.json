@@ -1,0 +1,70 @@
+{
+"country_1": "US",
+  "country_2": "United States",
+  "currency": "$",
+ "lang": "en",
+  "FaceBookCurrency": "USD",
+  "upsell1ID": 22,
+  "upsell2ID": 21,
+"upsell3ID": 23,
+  "Lo_Site_Id": 222,
+  "IsNoStateCheckOut": false,
+ "Flow": {
+ "leadPage": {
+      "url1": "checkoutPage",
+      "url2": ""
+    },
+    "productPage": {
+      "url1": "catalogPage",
+      "url2": "checkoutPage"
+    },
+
+    "checkoutPage": {
+      "url1": "upsellPage1",
+      "url2": "thankyouPage"
+    },
+
+    "upsellPage1": {
+      "url1": "upsellPage2",
+      "url2": "thankyouPage"
+    },
+    "upsellPage2": {
+      "url1": "upsellPage3",
+      "url2": "thankyouPage"
+    },
+    "upsellPage3": {
+      "url1": "upsellPage4",
+      "url2": "thankyouPage"
+    },
+    "upsellPage4": {
+      "url1": "thankyouPage",
+      "url2": ""
+    }
+  },
+  "products": [
+    {
+       "cid": 19,
+      "cid_free": 20,
+      "img": "/resources/images/main-banner.jpg",
+      "imgsafe": "/resources/images/smain-big.jpg",
+      "img_small": "/resources/images/smain-small.jpg",
+      "price": 11.97,
+      "old_price": 30,
+      "old_price_u1": 39.95,
+      "name": "<b>Feg Serum</b> - Eyelash Enhancer",
+      "one_free": "1 Free",
+      "discount_expires": "The discount expires in ",
+      "discount": "Discount",
+      "rewiews_mark": "9.8",
+      "excellent": "Excellent",
+      "num_reviews": "53 Reviews",
+      "buy_2_get_1": "Buy 2 and get 1 for free",
+      "satisfaction_guaranteed": "Satisfaction<br>Guaranteed",
+      "add_to_cart": "Add to Cart",
+      "support_email": "support@woweyelashserum.com",
+      "rand_head": "60% Off - US Only",
+      "logos": "../resources/images/logos.jpg",
+      "head": "60% Discount + Free Shipping - USA"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+ Occasionally, you will want custom landing page behavior to be triggered after checkout or after an upsell, but before the next page attempts to load.
+
+This can be accomplished by assigning a callback function to a global JavaScript variable named: 'kform_formSubmitCallback'. The signature of this callback is: 'function(response, success)', where response is the API response or error message, and success is either true for a successful transaction or false otherwise.
+
+For example, placing the following code on your upsell page will automatically redirect the customer to the next page, even if the transaction declined, once they close the error dialog:
+
+    window.addEventListener('load',function()
+    {
+        kform_formSubmitCallback = function(response, success)
+        {
+            if (!success)
+                document.location.href = <?php echo $ksdk->redirectsTo; ?>;
+        }
+    }
+
+Additionally, you can prevent the page from automatically redirecting to the next page after a successful transaction by returning false from this callback:
+
+    kform_formSubmitCallback = function(response, success)
+    {
+        return !success;
+    }
+
+Returning anything other than false results in the Konnektive SDK continuing with normal behavior after the callback.
+
+(i.e. Automatically redirecting on transaction success, and doing nothing after a transaction decline or error.)
