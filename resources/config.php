@@ -180,193 +180,26 @@ if($_SERVER['REQUEST_METHOD']=='POST' && strstr($requestUri,$baseFile))
 /*[DYNAMIC-DATA-TOKEN] do not remove */
 
 KFormConfig::$campaignData = '{
-    "countries": {
-        "US": "United States"
-    },
-    "states": {
-        "US": {
-            "AL": "Alabama",
-            "AK": "Alaska",
-            "AZ": "Arizona",
-            "AR": "Arkansas",
-            "CA": "California",
-            "CO": "Colorado",
-            "CT": "Connecticut",
-            "DE": "Delaware",
-            "DC": "District of Columbia",
-            "FL": "Florida",
-            "GA": "Georgia",
-            "HI": "Hawaii",
-            "ID": "Idaho",
-            "IL": "Illinois",
-            "IN": "Indiana",
-            "IA": "Iowa",
-            "KS": "Kansas",
-            "KY": "Kentucky",
-            "LA": "Louisiana",
-            "ME": "Maine",
-            "MD": "Maryland",
-            "MA": "Massachusetts",
-            "MI": "Michigan",
-            "MN": "Minnesota",
-            "MS": "Mississippi",
-            "MO": "Missouri",
-            "MT": "Montana",
-            "NE": "Nebraska",
-            "NV": "Nevada",
-            "NH": "New Hampshire",
-            "NJ": "New Jersey",
-            "NM": "New Mexico",
-            "NY": "New York",
-            "NC": "North Carolina",
-            "ND": "North Dakota",
-            "OH": "Ohio",
-            "OK": "Oklahoma",
-            "OR": "Oregon",
-            "PA": "Pennsylvania",
-            "RI": "Rhode Island",
-            "SC": "South Carolina",
-            "SD": "South Dakota",
-            "TN": "Tennessee",
-            "TX": "Texas",
-            "UT": "Utah",
-            "VT": "Vermont",
-            "VA": "Virginia",
-            "WA": "Washington",
-            "WV": "West Virginia",
-            "WI": "Wisconsin",
-            "WY": "Wyoming",
-            "AS": "American Samoa",
-            "FM": "Federated States of Micronesia",
-            "GU": "Guam",
-            "MP": "Northern Mariana Islands",
-            "PR": "Puerto Rico",
-            "MH": "Republic of Marshall Islands",
-            "VI": "Virgin Islands of the U.S.",
-            "AE": "Armed Forces Middle East",
-            "AA": "Armed Forces Americas",
-            "AP": "Armed Forces Pacific"
-        }
-    },
-    "currencySymbol": "$",
+    "countries": $$KonnectiveCampaignDataCountries,
+    "states": $$KonnectiveCampaignDataStates,
+    "currencySymbol": "$$KonnectiveCampaignDataCurrencySymbol",
     "shipOptions": [],
     "coupons": [],
     "products": [],
-     "webPages": {
-        "catalogPage": {
-            "disableBack": 0,
-            "url": "https:\/\/www.woweyelashserum.com\/"
-        },
-        "checkoutPage": {
-            "disableBack": 0,
-            "url": "https:\/\/www.woweyelashserum.com\/checkout.php",
-            "autoImportLead": 1,
-            "productId": null,
-            "requireSig": 0,
-            "sigType": 0,
-            "cardinalAuth": 0,
-            "paayApiKey": null
-        },
-        "thankyouPage": {
-            "disableBack": 0,
-            "url": "https:\/\/www.woweyelashserum.com\/thankyou.php",
-            "createAccountDialog": 0,
-            "reorderUrl": null,
-            "allowReorder": 0
-        },
-        "upsellPage1": {
-            "disableBack": 1,
-            "url": "https:\/\/www.woweyelashserum.com\/upsell1.php",
-            "createAccountDialog": 0,
-            "requirePayInfo": 0,
-            "productId": 22,
-            "replaceProductId": null
-        },
-        "upsellPage2": {
-            "disableBack": 1,
-            "url": "https:\/\/www.woweyelashserum.com\/upsell2.php",
-            "createAccountDialog": 0,
-            "requirePayInfo": 0,
-            "productId": 21,
-            "replaceProductId": null
-        },
-        "upsellPage3": {
-            "disableBack": 1,
-            "url": "https:\/\/www.woweyelashserum.com\/upsell3.php",
-            "createAccountDialog": 0,
-            "requirePayInfo": 0,
-            "productId": 23,
-            "replaceProductId": null
-        },
-        "productDetails": {
-            "url": "product-details.php"
-        }
-    },
+     "webPages": $$KonnectiveCampaignDataWebPages,
     "landerType": "CART",
-    "googleTrackingId": "UA-156009617-3",
+    "googleTrackingId": "$$KonnectiveGoogleTrackingID",
     "enableFraudPlugin": 0,
     "autoTax": 0,
     "taxServiceId": null,
     "companyName": "optin_solutions_llc",
-    "offers": {
-        "19": {
-            "productId": 19,
-            "name": "Feg Serum - Eyelash Enhancer",
-            "description": "*No description available",
-            "imagePath": "https:\/\/www.woweyelashserum.com\/resources\/images\/smain-small.jpg",
-            "imageId": 1,
-            "price": "11.97",
-            "shipPrice": "0.00",
-            "category": "FEG"
-        },
-        "20": {
-            "productId": 20,
-            "name": "Feg Serum - Eyelash Enhancer - Free",
-            "description": "*No description available",
-            "imagePath": "https:\/\/www.woweyelashserum.com\/resources\/images\/smain-small.jpg",
-            "imageId": 1,
-            "price": "0.00",
-            "shipPrice": "0.00",
-            "category": "FEG"
-        }
-    },
-    "upsells": {
-        "21": {
-            "productId": 21,
-            "name": "Feg Serum - Eyelash Enhancer - Free Gift",
-            "description": "*No description available",
-            "imagePath": "https:\/\/www.woweyelashserum.com\/resources\/images\/upsell1.jpg",
-            "imageId": 1,
-            "price": "4.95",
-            "shipPrice": "0.00",
-            "category": "FEG"
-        },
-        "22": {
-            "productId": 22,
-            "name": "FEG - EyeBrown (2pcs - 2 months of treatment)",
-            "description": "*No description available",
-            "imagePath": "https:\/\/www.woweyelashserum.com\/resources\/images\/upsell2.jpg",
-            "imageId": 2,
-            "price": "9.95",
-            "shipPrice": "0.00",
-            "category": "FEG"
-        },
-        "23": {
-            "productId": 23,
-            "name": "Silicone Make-Up Sponge",
-            "description": "*No description available",
-            "imagePath": "https:\/\/www.woweyelashserum.com\/resources\/images\/upsell3.jpg",
-            "imageId": 3,
-            "price": "4.95",
-            "shipPrice": "0.00",
-            "category": "FEG"
-        }
-    },
+    "offers": $$KonnectiveCampaignDataOffers,
+    "upsells": $$KonnectiveCampaignDataUpsells,
     "shipProfiles": [],
     "continents": {
         "US": "NA"
     },
     "paypal": {
-        "paypalBillerId": 6
+        "paypalBillerId": $$KonnectivePaypalBillerID
     }
 }';
